@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
 
 <!-- Basic Page Needs
@@ -19,12 +18,25 @@
 
 <!-- CSS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<link rel="stylesheet" href="skeleton/css/normalize.css">
-<link rel="stylesheet" href="skeleton/css/skeleton.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/skeleton.css">
 
 <!-- Favicon
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <link rel="icon" type="image/png" href="images/favicon.png">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+ <script>
+  $(document).ready(function (){
+  $("#choice").change(function() {
+ // foo is the id of the other select box 
+  if ($(this).val() != "option1") {
+  $("#foo").show();
+  }else{
+  $("#foo").hide();
+  } 
+  });
+  });
+ </script>
 
 </head>
 <body>
@@ -33,27 +45,25 @@
 <form>
 <div class="row">
 <div class="six columns">
-<label for="exampleRecipientInput">Задача посетителя</label>
-<select class="u-full-width" id="exampleRecipientInput">
-<option value="Option 1">Найти пользователя</option>
-<option value="Option 2">Добавить пользователя</option>
-<option value="Option 3">Удалить пользователя</option>
+<label for="choice">Задача посетителя</label>
+<select class="u-full-width" id="choice" name="choice">
+<option data-form="form1" value="Option1">Найти пользователя</option>
+<option data-form="form2" value="Option2">Добавить пользователя</option>
+<option data-form="form3" value="Option3">Удалить пользователя</option>
 </select>
 </div>
 </div>
 
 <div class="row" style="margin-top: 5%">
-<div class="six columns">
+<div id="foo" style="display:none;" class="six columns">
 <label for="surnameInput">Введите фамилию</label>
 <input class="u-full-width" type="text" placeholder="Иванов" id="surnameInput">
-</div>
-<div class="six columns">
 <label for="nameInput">Введите имя</label>
 <input class="u-full-width" type="text" placeholder="Василий" id="nameInput">
 </div>
 </div>
 
-<div class="row" style="margin-top: 5%">
+<div class="row" style="margin-top: 5%"i>
 <div class="six columns">
 <label for="surnameInput">Введите этаж</label>
 <input class="u-full-width" type="text" placeholder="2" id="floorInput">
@@ -79,6 +89,7 @@
 <input class="button-primary" style="margin-top: 5%" type="submit" value="Submit">
 </form>
 </div>
+
 <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
 
 <!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
