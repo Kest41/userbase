@@ -29,10 +29,13 @@
   $(document).ready(function (){
   $("#choice").change(function() {
  // foo is the id of the other select box 
-  if ($(this).val() != "option1") {
+ //document.write($(this).val())
+  if ($(this).val() == "Option2") {
   $("#foo").show();
+  $("#foo1").show();
   }else{
   $("#foo").hide();
+  $("#foo1").hide();
   } 
   });
   });
@@ -55,20 +58,22 @@
 </div>
 
 <div class="row" style="margin-top: 5%">
-<div id="foo" style="display:none;" class="six columns">
+<div class="six columns">
 <label for="surnameInput">Введите фамилию</label>
 <input class="u-full-width" type="text" placeholder="Иванов" id="surnameInput">
+<div class=six-columns>
 <label for="nameInput">Введите имя</label>
 <input class="u-full-width" type="text" placeholder="Василий" id="nameInput">
 </div>
 </div>
+</div>
 
-<div class="row" style="margin-top: 5%"i>
-<div class="six columns">
+<div class="row" style="margin-top: 5%">
+<div id="foo" style="display:none" class="six columns">
 <label for="surnameInput">Введите этаж</label>
 <input class="u-full-width" type="text" placeholder="2" id="floorInput">
 </div>
-<div class="six columns">
+<div id="foo1" style="display:none" class="six columns">
 <label for="nameInput">Введите номер комнаты</label>
 <input class="u-full-width" type="text" placeholder="206" id="roomInput">
 </div>
