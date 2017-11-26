@@ -30,7 +30,7 @@
   $("#choice").change(function() {
  // foo is the id of the other select box 
  //document.write($(this).val())
-  if ($(this).val() == "Option2") {
+  if ($(this).val() == "add") {
   $("#foo").show();
   $("#foo1").show();
   }else{
@@ -50,9 +50,9 @@
 <div class="six columns">
 <label for="choice">Задача посетителя</label>
 <select class="u-full-width" id="choice" name="choice">
-<option data-form="form1" value="Option1">Найти пользователя</option>
-<option data-form="form2" value="Option2">Добавить пользователя</option>
-<option data-form="form3" value="Option3">Удалить пользователя</option>
+<option data-form="form1" value="find">Найти пользователя</option>
+<option data-form="form2" value="add">Добавить пользователя</option>
+<option data-form="form3" value="delete">Удалить пользователя</option>
 </select>
 </div>
 </div>
@@ -61,10 +61,10 @@
 <div class="six columns">
 <label for="surnameInput">Введите фамилию</label>
 <input class="u-full-width" type="text" placeholder="Иванов" id="surnameInput">
-<div class=six-columns>
+</div>
+<div class="six columns">
 <label for="nameInput">Введите имя</label>
 <input class="u-full-width" type="text" placeholder="Василий" id="nameInput">
-</div>
 </div>
 </div>
 
