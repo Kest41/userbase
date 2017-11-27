@@ -33,9 +33,17 @@
   if ($(this).val() == "add") {
   $("#foo").show();
   $("#foo1").show();
+	$("#foo2").show();
+	$("#foo3").show();
+	$("#foo4").show();
+	$("#foo5").show();
   }else{
   $("#foo").hide();
   $("#foo1").hide();
+	$("#foo2").hide();
+	$("#foo3").hide();
+	$("#foo4").hide();
+	$("#foo5").hide();
   } 
   });
   });
@@ -43,7 +51,7 @@
 
 </head>
 <body>
-<div class="container" style="margin-top: 5%">
+<div class="container" style="margin-top: 3%">
 <!-- The above form looks like this -->
 <form>
 <div class="row">
@@ -68,28 +76,47 @@
 </div>
 </div>
 
-<div class="row" style="margin-top: 5%">
-<div id="foo" style="display:none" class="six columns">
-<label for="surnameInput">Введите этаж</label>
-<input class="u-full-width" type="text" placeholder="2" id="floorInput">
-</div>
-<div id="foo1" style="display:none" class="six columns">
-<label for="nameInput">Введите номер комнаты</label>
-<input class="u-full-width" type="text" placeholder="206" id="roomInput">
+<div class="row" style="margin-top: 2%">
+<div id="foo"class="six columns" style="display:none">
+<label for="patronymicInput">Введите отчество</label>
+<input class="u-full-width" type="text" placeholder="Иванович" id="patronymicInput">
 </div>
 </div>
 
-<div class="row" style="margin-top: 5%">
+<div class="row" style="margin-top: 2%">
 <div class="six columns">
 <label for="surnameInput">Введите имя компьютера</label>
 <input class="u-full-width" type="text" placeholder="ivanov_pc" id="pcnameInput">
 </div>
 </div>
 
-<label class="domain">
+<label id="foo5" class="domain" style="display:none">
 <input type="checkbox">
 <span class="label-body">Пользователь в домене</span>
 </label>
+
+
+<div class="row" style="margin-top: 5%">
+<div id="foo1" style="display:none" class="six columns">
+<label for="surnameInput">Введите этаж</label>
+<input class="u-full-width" type="text" placeholder="2" id="floorInput">
+</div>
+<div id="foo2" style="display:none" class="six columns">
+<label for="nameInput">Введите номер комнаты</label>
+<input class="u-full-width" type="text" placeholder="206" id="roomInput">
+</div>
+</div>
+
+<div class="row" style="margin-top: 2%">
+<div id="foo3" style="display:none" class="six columns">
+<label for="extensionInput">Введите внутренний номер</label>
+<input class="u-full-width" type="text" placeholder="3296" id="extensionInput">
+</div>
+<div id="foo4" style="display:none" class="six columns">
+<label for="mobileInput">Введите номер мобильного</label>
+<input class="u-full-width" type="text" placeholder="89261234567" id="mobileInput">
+</div>
+</div>
 
 <input class="button-primary" style="margin-top: 5%" type="submit" value="Submit">
 </form>
