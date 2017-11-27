@@ -53,7 +53,7 @@
 <body>
 <div class="container" style="margin-top: 3%">
 <!-- The above form looks like this -->
-<form>
+<form action="form.php" method="post">
 <div class="row">
 <div class="six columns">
 <label for="choice">Задача посетителя</label>
@@ -68,25 +68,25 @@
 <div class="row" style="margin-top: 5%">
 <div class="six columns">
 <label for="surnameInput">Введите фамилию</label>
-<input class="u-full-width" type="text" placeholder="Иванов" id="surnameInput">
+<input class="u-full-width" type="text" placeholder="Иванов" id="surnameInput" name="surnameInput">
 </div>
 <div class="six columns">
 <label for="nameInput">Введите имя</label>
-<input class="u-full-width" type="text" placeholder="Василий" id="nameInput">
+<input class="u-full-width" type="text" placeholder="Василий" name="nameInput">
 </div>
 </div>
 
 <div class="row" style="margin-top: 2%">
 <div id="foo"class="six columns" style="display:none">
 <label for="patronymicInput">Введите отчество</label>
-<input class="u-full-width" type="text" placeholder="Иванович" id="patronymicInput">
+<input class="u-full-width" type="text" placeholder="Иванович" id="patronymicInput" name="patronymicInput">
 </div>
 </div>
 
 <div class="row" style="margin-top: 2%">
 <div class="six columns">
 <label for="surnameInput">Введите имя компьютера</label>
-<input class="u-full-width" type="text" placeholder="ivanov_pc" id="pcnameInput">
+<input class="u-full-width" type="text" placeholder="ivanov_pc" id="pcnameInput" name="pcnameInput">
 </div>
 </div>
 
@@ -99,33 +99,26 @@
 <div class="row" style="margin-top: 5%">
 <div id="foo1" style="display:none" class="six columns">
 <label for="surnameInput">Введите этаж</label>
-<input class="u-full-width" type="text" placeholder="2" id="floorInput">
+<input class="u-full-width" type="text" placeholder="2" id="floorInput" name="floorInput">
 </div>
 <div id="foo2" style="display:none" class="six columns">
 <label for="nameInput">Введите номер комнаты</label>
-<input class="u-full-width" type="text" placeholder="206" id="roomInput">
+<input class="u-full-width" type="text" placeholder="206" id="roomInput" name="roomInput">
 </div>
 </div>
 
 <div class="row" style="margin-top: 2%">
 <div id="foo3" style="display:none" class="six columns">
 <label for="extensionInput">Введите внутренний номер</label>
-<input class="u-full-width" type="text" placeholder="3296" id="extensionInput">
+<input class="u-full-width" type="text" placeholder="3296" id="extensionInput" name="extensionInput">
 </div>
 <div id="foo4" style="display:none" class="six columns">
 <label for="mobileInput">Введите номер мобильного</label>
-<input class="u-full-width" type="text" placeholder="89261234567" id="mobileInput">
+<input class="u-full-width" type="text" placeholder="89261234567" id="mobileInput" name="mobileInput" value="89">
 </div>
 </div>
 
 <input class="button-primary" style="margin-top: 5%" type="submit" value="Submit">
 </form>
 </div>
-
-<!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
-
-<!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
-
-
-<!-- Primary Page Layout
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
