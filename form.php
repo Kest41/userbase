@@ -37,7 +37,7 @@
 <td><?php echo $_POST["extensionInput"]; ?></td>
 <td><?php echo $_POST["mobileInput"]; ?></td>
 <td><?php echo $_POST["pcnameInput"]; ?></td>
-<td>&#9989; &#3992;</td>
+<td>&#9989;</td>
 <td><?php echo $_POST["floorInput"]; ?></td>
 <td><?php echo $_POST["roomInput"]; ?></td>
 </tr>
