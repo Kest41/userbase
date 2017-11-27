@@ -54,7 +54,7 @@ case 'find': ?>
 <td><?php echo $_POST["extensionInput"]; ?></td>
 <td><?php echo $_POST["mobileInput"]; ?></td>
 <td><?php echo $_POST["pcnameInput"]; ?></td>
-<td><?php echo $_POST["domainInput"]; ?></td>
+<td><?php if ($_POST["domainInput"] == 'да'): ?> <p>&#9989;</p> <?php endif; ?></td>
 <td><?php echo $_POST["floorInput"]; ?></td>
 <td><?php echo $_POST["roomInput"]; ?></td>
 </tr>
