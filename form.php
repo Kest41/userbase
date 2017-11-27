@@ -10,12 +10,29 @@
 
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/skeleton.css">
+
 </head>
 
 <body>
+<?php 
+$surname=$_POST["surnameInput"];
+$name=$_POST["nameInput"];
+$patronymic=$_POST["patronymicInput"];
+$extension=$_POST["extensionInput"];
+$mobile=$_POST["mobileInput"];
+$pcname=$_POST["pcnameInput"];
+$floor=$_POST["floorInput"];
+$room=$_POST["roomInput"];
+?>
+
 
 <div class="container" style="margin-top: 5%">
 <table class="u-full-width">
+<?php switch($_POST['choice']){
+case 'find': ?>
+	<p>Вы хотели найти <?php echo $name; ?>, но нам лень, ищите сами</p>
+<?php break; ?>
+<?php case 'add': ?>
 <thead>
 <tr>
 <th>Фамилия</th>
@@ -37,12 +54,16 @@
 <td><?php echo $_POST["extensionInput"]; ?></td>
 <td><?php echo $_POST["mobileInput"]; ?></td>
 <td><?php echo $_POST["pcnameInput"]; ?></td>
-<td>&#9989;</td>
+<td><?php echo $_POST["domainInput"]; ?></td>
 <td><?php echo $_POST["floorInput"]; ?></td>
 <td><?php echo $_POST["roomInput"]; ?></td>
 </tr>
-</tbody>
+</body>
 </table>
 </div>
+<?php break; ?>
+<?php case'delete': ?>
+<p>Вы там что то хотели удалить, но оно само удалилось</p>
+<?php break;} ?>
 </body>
 </html>
