@@ -24,3 +24,4 @@ MAC-адрес mac address
 Лицензия ОС software license  
 Примечание message  
 
+http://intop24.ru/article_15_lesson_5.php
