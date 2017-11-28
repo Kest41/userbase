@@ -1,14 +1,17 @@
 # userbase
   
 Поля базы данных для сотрудников:  
+Идентификатор id  
 Имя Пользователя name  
 Фамилия surname  
 Отчество patronymic  
 Локальный телефон extension  
 Мобильный телефон mobile  
-  
+Уволен fired  
+Декрет maternity leave  
 
 Поля базы данных для оборудования:  
+Идентификатор id  
 Устройство device  
 Производитель manufacturer  
 Модель model  
